@@ -1,0 +1,6 @@
+.idea/
+venv/
+data/*
+!data/Readme.md
+out/*
+!out/Readme.md
