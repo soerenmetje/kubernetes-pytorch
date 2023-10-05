@@ -1,6 +1,6 @@
 # Run Pytorch Workload on Kubernetes
-This repository contains an example for a PyTorch model training in [main.py](src%2Fmain.py). 
-It also covers the deployment on Docker and Kubernetes. 
+This repository contains a simple PyTorch model training in [main.py](src%2Fmain.py) based on the [PyTorch quickstart guide](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html). 
+The repository also covers the deployment on Docker and Kubernetes. 
 Here, the Docker image [bitnami/pytorch](https://hub.docker.com/r/bitnami/pytorch) (version 2.0.1) is used. 
 The goal is to provide a proof of concept for running real-world Kubernetes workloads on certain Kubernetes clusters.
 
@@ -22,7 +22,7 @@ docker run -it --rm --name pytorch --user $UID -v $PWD:/app bitnami/pytorch:2.0.
 ### Run using Kubernetes
 To run the training using Kubernetes, follow following instructions.
 
-For testing purpose, you can create a Kind Kubernetes cluster.
+For testing purpose, you can create a [Kind](https://github.com/kubernetes-sigs/kind) Kubernetes cluster.
 Use the [kind-config.yaml](kind-config.yaml) 
 that creates a mapping for the current directory into the `/app` directory inside the cluster container.
 ```bash
