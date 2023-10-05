@@ -34,7 +34,6 @@ for X, y in test_dataloader:
     break
 
 # Get cpu, gpu or mps device for training.
-# Get cpu, gpu or mps device for training.
 device = (
     "cuda"
     if torch.cuda.is_available()
