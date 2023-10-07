@@ -12,6 +12,7 @@ The training runs for certain epochs (and therefore a certain time.
 ## Setup
 1. Clone this repository 
 2. Run the training either using Docker or Kubernetes
+3. When the training is finished, the model `model.pth` is stored in the directory `out`
 
 ### Run using Docker
 To run the training using Docker, run the following from the root of this project:
