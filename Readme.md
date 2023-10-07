@@ -62,6 +62,9 @@ spec:
             path: /app
             type: Directory
 EOF
+
 # wait for training to finish
 kubectl wait --for=condition=complete --timeout=10h job/pytorch-example -n pytorch
+
+kubectl logs -n pytorch job/pytorch-example
 ```
